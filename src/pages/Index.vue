@@ -24,7 +24,7 @@
         <!--  Code Block   -->
         <div class="py-4">
           <code class="block px-4 py-1 select-all bg-ui-border text-ui-typo">
-            curl -Lo ok git.io/omk.zsh && chmod o+x ok && ./ok
+            curl -Lo ok git.io/JsuXn && chmod o+x ok && ./ok
           </code>
         </div>
 
@@ -32,9 +32,11 @@
 
         <div class="py-4">
           <code class="block px-4 py-1 select-all bg-ui-border text-ui-typo">
-            git clone htps://github.com/vansteki/oh-my-kali
+            git clone htps://github.com/vansteki/ohmykali
             <br>
-            cd oh-my-kali
+            cd ohmykali
+            <br>
+            cp vars.example.yml vars.yml
             <br>
             ansible-storybook psrt_encrypt.yml
           </code>
@@ -65,7 +67,7 @@
         <p class="mt-8 text-center">
           Made with 💛️ by
           <a class="border-b border-dashed border-ui-primary text-ui-primary"
-             href="https://github.com/vansteki/oh-my-kali"
+             href="https://github.com/vansteki/ohmykali"
           >
             V
           </a>.
