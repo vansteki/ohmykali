@@ -71,24 +71,32 @@
       ignore_errors: true
       tags: iso
 
-    - name: Download Fallback (official mirror)
+    - name: Download Kali image (official)
       get_url:
-        url: "{{ officialMirrorISO | default('https://mirror.anigil.com/kali-images/kali-2021.1/kali-linux-2021.1-live-amd64.iso', true) }}"
+        url: "{{ officialISO | default('http://cdimage.kali.org/kali-2021.1/kali-linux-2021.1-live-amd64.iso', true) }}"
         dest: "{{ isoDir | default('./iso', true) }}/{{ isoName | default('kali-linux-2021.1-live-amd64.iso', true) }}"
       register: downloadResult
       when: downloadResult is failed
       ignore_errors: true
       tags: iso
 
-    - name: Download Fallback (official)
+    - name: Download Kali image (official)
+      shell: |
+        cd ./iso
+        curl -Lo {{ isoName | default('kali-linux-2021.1-live-amd64.iso', true) }} {{ officialISO | default('http://cdimage.kali.org/kali-2021.1/kali-linux-2021.1-live-amd64.iso', true) }}
+      register: downloadResult
+      when: downloadResult is failed
+      ignore_errors: true
+      tags: test
+
+    - name: Download Kali image (official mirror)
       get_url:
-        url: "{{ officialISO | default('https://cdimage.kali.org/kali-2021.1/kali-linux-2021.1-live-amd64.iso', true) }}"
+        url: "{{ officialMirrorISO | default('http://mirror.anigil.com/kali-images/kali-2021.1/kali-linux-2021.1-live-amd64.iso', true) }}"
         dest: "{{ isoDir | default('./iso', true) }}/{{ isoName | default('kali-linux-2021.1-live-amd64.iso', true) }}"
       register: downloadResult
       when: downloadResult is failed
       any_errors_fatal: true
       tags: iso
-
 
     - name: debug download downloadResult
       debug:
