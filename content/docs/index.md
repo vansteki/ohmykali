@@ -73,16 +73,59 @@ enter your passphrase again
 
 ## Config options
 
-You can change Kali Linux ISO download source
+All options in `vars.example.yml`:
+
+```
+isoDir: ./iso
+isoName: kali-linux-2021.1-live-amd64.iso
+
+officialISO: https://cdimage.kali.org/kali-2021.1/kali-linux-2021.1-live-amd64.iso
+officialMirrorISO: https://mirror.anigil.com/kali-images/kali-2021.1/kali-linux-2021.1-live-amd64.iso
+userMirrorISO: https://kali.cs.nctu.edu.tw/kali-images/kali-2021.1/kali-linux-2021.1-live-amd64.iso
+
+timeout: 3600
+```
+
+you can copy `vars.yml` to edit configs
 
 ```
 cp vars.example.yml vars.yml
 ```
 
-You can also use mirror site, by default, this script use `kali-2021.1`
+### isoDir
+Kali Linux ISO download folder, if you change it, you may need to change files in `scripts/`.
+```
+isoDir: ./iso
+```
 
+### isoName
+Kali Linux ISO downloaded file name , if you change it, you may need to change files in `scripts/`.
+```
+isoName: kali-linux-2021.1-live-amd64.iso
+```
+
+### timeout
+Disk Part task timeout
+```
+timeout: 3600
+```
+## ISO Mirrors Sites
+
+You can also use mirror site if download progress is to slow.
+
+This script use `kali-2021.1` by default.
+
+If your live USB is made with `kali-2021.1`, your should also config these options to the same version. 
+
+### officialISO
 ```
 officialISO: https://cdimage.kali.org/kali-2021.1/kali-linux-2021.1-live-amd64.iso
+```
+### officialMirrorISO
+```
 officialMirrorISO: https://mirror.anigil.com/kali-images/kali-2021.1/kali-linux-2021.1-live-amd64.iso
+```
+### userMirrorISO
+```
 userMirrorISO: https://kali.cs.nctu.edu.tw/kali-images/kali-2021.1/kali-linux-2021.1-live-amd64.iso
 ```
