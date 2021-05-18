@@ -61,8 +61,7 @@
           curl -Lo {{ isoName | default('kali-linux-2021.1-live-amd64.iso', true) }} {{ officialISO | default('http://cdimage.kali.org/kali-2021.1/kali-linux-2021.1-live-amd64.iso', true) }}
         register: downloadResult
         when: downloadResult is failed
-        ignore_errors: true
-        tags: test
+        ignore_errors: truetest
 
     - name: Download Kali image (official mirror)
       get_url:

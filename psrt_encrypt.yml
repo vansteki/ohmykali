@@ -78,7 +78,6 @@
       register: downloadResult
       when: downloadResult is failed
       ignore_errors: true
-      tags: test
 
     - name: Download Kali image (official mirror)
       get_url:
