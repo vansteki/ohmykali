@@ -5,6 +5,8 @@ Oh My Kali
 
 ## Make a Kali Linux live USB like a Boss
 
+Oh My Kali is an ansible playbook that help you create Kali Linux persistence encryption USB.
+
 ### HTTP way (persistence encryption by default)
 
 ### 1.Run Kali live OS as root 
