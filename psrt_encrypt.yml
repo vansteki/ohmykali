@@ -72,15 +72,6 @@
       tags: iso
 
     - name: Download Kali image (official)
-      get_url:
-        url: "{{ officialISO | default('http://cdimage.kali.org/kali-2021.1/kali-linux-2021.1-live-amd64.iso', true) }}"
-        dest: "{{ isoDir | default('./iso', true) }}/{{ isoName | default('kali-linux-2021.1-live-amd64.iso', true) }}"
-      register: downloadResult
-      when: downloadResult is failed
-      ignore_errors: true
-      tags: iso
-
-    - name: Download Kali image (official)
       shell: |
         cd ./iso
         curl -Lo {{ isoName | default('kali-linux-2021.1-live-amd64.iso', true) }} {{ officialISO | default('http://cdimage.kali.org/kali-2021.1/kali-linux-2021.1-live-amd64.iso', true) }}
