@@ -1,0 +1,25 @@
+# Terraform
+.terraform/
+.terraform.tfstate*
+terraform.tfstate*
+variables.tf
+
+# Key Pairs
+*.pem
+*.pub
+dev
+
+# Ansible
+hosts
+ansible.cfg
+var.yml
+
+iso/*
+!iso/.gitkeep
+
+# IDE & editors configs
+.vs/
+.run
+.idea
+
+vars.yml
