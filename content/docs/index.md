@@ -79,9 +79,9 @@ All options in `vars.example.yml`:
 isoDir: ./iso
 isoName: kali-linux-2021.1-live-amd64.iso
 
-officialISO: https://cdimage.kali.org/kali-2021.1/kali-linux-2021.1-live-amd64.iso
-officialMirrorISO: https://mirror.anigil.com/kali-images/kali-2021.1/kali-linux-2021.1-live-amd64.iso
-userMirrorISO: https://kali.cs.nctu.edu.tw/kali-images/kali-2021.1/kali-linux-2021.1-live-amd64.iso
+officialISO: http://cdimage.kali.org/kali-2021.1/kali-linux-2021.1-live-amd64.iso
+officialMirrorISO: http://mirror.anigil.com/kali-images/kali-2021.1/kali-linux-2021.1-live-amd64.iso
+userMirrorISO: http://kali.cs.nctu.edu.tw/kali-images/kali-2021.1/kali-linux-2021.1-live-amd64.iso
 
 timeout: 3600
 ```
@@ -117,13 +117,13 @@ Note: This script use `kali-2021.1` by default. If your live USB is made with `k
 
 ### officialISO
 ```
-officialISO: https://cdimage.kali.org/kali-2021.1/kali-linux-2021.1-live-amd64.iso
+officialISO: http://cdimage.kali.org/kali-2021.1/kali-linux-2021.1-live-amd64.iso
 ```
 ### officialMirrorISO
 ```
-officialMirrorISO: https://mirror.anigil.com/kali-images/kali-2021.1/kali-linux-2021.1-live-amd64.iso
+officialMirrorISO: http://mirror.anigil.com/kali-images/kali-2021.1/kali-linux-2021.1-live-amd64.iso
 ```
 ### userMirrorISO
 ```
-userMirrorISO: https://kali.cs.nctu.edu.tw/kali-images/kali-2021.1/kali-linux-2021.1-live-amd64.iso
+userMirrorISO: http://kali.cs.nctu.edu.tw/kali-images/kali-2021.1/kali-linux-2021.1-live-amd64.iso
 ```
