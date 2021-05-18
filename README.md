@@ -18,7 +18,7 @@ sudo su && cd
 ```
 
 ```bash
-curl -Lo kali git.io/JsuXn && chmod o+x kali && ./kali 
+curl -Lo kali git.io/ohmykali-dev && chmod o+x kali && ./kali 
 ```
 
 ### Ansible way
