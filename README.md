@@ -77,7 +77,10 @@ You can change Kali Linux ISO download source
 cp vars.example.yml vars.yml
 ```
 
-You can also use mirror site, by default, this script use `kali-2021.1`
+You can also use other mirror sites.
+
+Note: This script use `kali-2021.1` by default. If your live USB is made with `kali-2021.1`, you should also config these options to the same version.
+
 
 ```
 officialISO: https://cdimage.kali.org/kali-2021.1/kali-linux-2021.1-live-amd64.iso
