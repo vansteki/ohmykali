@@ -22,6 +22,17 @@ curl -Lo kali git.io/ohmykali-dev && chmod o+x kali && ./kali
 ```
 
 ### Ansible way
+
+```
+apt install ansible -y
+```
+
+```
+git clone htps://github.com/vansteki/ohmykali
+cd ohmykali
+cp vars.example.yml vars.yml
+```
+
 USB encryption:
 ```bash
 ansible-storybook psrt_encrypt.yml
@@ -69,5 +80,5 @@ You can also use mirror site, by default, this script use `kali-2021.1`
 ```
 officialISO: https://cdimage.kali.org/kali-2021.1/kali-linux-2021.1-live-amd64.iso
 officialMirrorISO: https://mirror.anigil.com/kali-images/kali-2021.1/kali-linux-2021.1-live-amd64.iso
-userMirrorISO:
+userMirrorISO: https://kali.cs.nctu.edu.tw/kali-images/kali-2021.1/kali-linux-2021.1-live-amd64.iso
 ```
