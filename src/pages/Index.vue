@@ -49,7 +49,7 @@
         <p>Before you start, you may need to check something:</p>
         <p>1. Prepare a Kali Bootable USB Drive (2021.1 by default), see
           <a class="border-b border-dashed border-ui-primary text-ui-primary"
-             href="https://www.kali.org/docs/usb/live-usb-install-with-windows/">
+             href="https://www.kali.org/docs/usb/">
             this article
           </a>
         </p>

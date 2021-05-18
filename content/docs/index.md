@@ -5,6 +5,9 @@ sidebar: 'docs'
 
 # Introduction
 
+Prepare a Kali Bootable USB Drive (2021.1 by default), see
+[this article](https://www.kali.org/docs/usb/)
+
 ## HTTP way
 
 This script use persistence encryption by default.
@@ -64,4 +67,22 @@ What is your USB device new sector (eg /dev/sda3)?: /dev/sdb3
 What size do you want to part (eg 7GiB)?: 11GiB
 enter your passphrase
 enter your passphrase again
+```
+
+### 3. Done, reboot
+
+## Config options
+
+You can change Kali Linux ISO download source
+
+```
+cp vars.example.yml vars.yml
+```
+
+You can also use mirror site, by default, this script use `kali-2021.1`
+
+```
+officialISO: https://cdimage.kali.org/kali-2021.1/kali-linux-2021.1-live-amd64.iso
+officialMirrorISO: https://mirror.anigil.com/kali-images/kali-2021.1/kali-linux-2021.1-live-amd64.iso
+userMirrorISO: https://kali.cs.nctu.edu.tw/kali-images/kali-2021.1/kali-linux-2021.1-live-amd64.iso
 ```
