@@ -111,11 +111,9 @@ timeout: 3600
 ```
 ## ISO Mirrors Sites
 
-You can also use mirror site if download progress is to slow.
+You can also use mirror site if download progress is too slow.
 
-This script use `kali-2021.1` by default.
-
-If your live USB is made with `kali-2021.1`, your should also config these options to the same version. 
+This script use `kali-2021.1` by default. If your live USB is made with `kali-2021.1`, your should also config these options to the same version. 
 
 ### officialISO
 ```
