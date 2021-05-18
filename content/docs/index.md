@@ -14,6 +14,16 @@ This script use persistence encryption by default.
 ```
 ## Ansible way
 
+```
+apt install ansible -y
+```
+
+```
+git clone htps://github.com/vansteki/ohmykali
+cd ohmykali
+cp vars.example.yml vars.yml
+```
+
 ### Persistence encryption:
 
 ```bash

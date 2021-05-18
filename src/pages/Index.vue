@@ -32,6 +32,8 @@
 
         <div class="py-4">
           <code class="block px-4 py-1 select-all bg-ui-border text-ui-typo">
+            apt install ansible -y
+            <br>
             git clone htps://github.com/vansteki/ohmykali
             <br>
             cd ohmykali
