@@ -1,25 +1,12 @@
-# Terraform
-.terraform/
-.terraform.tfstate*
-terraform.tfstate*
-variables.tf
+*.log
+.cache
+.DS_Store
+src/.temp
+node_modules
+dist
+!.env.example
+.env
+.env.*
 
-# Key Pairs
-*.pem
-*.pub
-dev
-
-# Ansible
-hosts
-ansible.cfg
-var.yml
-
-iso/*
-!iso/.gitkeep
-
-# IDE & editors configs
-.vs/
+# IDE config
 .run
-.idea
-
-vars.yml
