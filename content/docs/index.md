@@ -10,7 +10,7 @@ sidebar: 'docs'
 This script use persistence encryption by default.
 
 ```bash
- curl -Lo ok git.io/JsuXn && chmod o+x ok && ./ok
+ curl -Lo ok git.io/ohmykali-dev && chmod o+x ok && ./ok
 ```
 ## Ansible way
 

@@ -24,7 +24,7 @@
         <!--  Code Block   -->
         <div class="py-4">
           <code class="block px-4 py-1 select-all bg-ui-border text-ui-typo">
-            curl -Lo ok git.io/JsuXn && chmod o+x ok && ./ok
+            curl -Lo ok git.io/ohmykali-dev && chmod o+x ok && ./ok
           </code>
         </div>
 
