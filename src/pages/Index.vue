@@ -150,8 +150,8 @@ export default {
   },
 
   metaInfo () {
-    const title = 'Great Documentation starts here'
-    const description = 'DOCC is a starter theme with instant search and dark mode for writing great technical documentation. Based on Gridsome!'
+    const title = 'Oh My Kali'
+    const description = 'Oh My Kali is an Ansible Playbook that help you create Kali Linux persistence encryption USB.'
 
     return {
       title: title,
