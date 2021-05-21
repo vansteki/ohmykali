@@ -7,7 +7,7 @@ Oh My Kali
 
 Oh My Kali is an Ansible Playbook that help you create Kali Linux persistence encryption USB.
 
-[![asciicast](https://asciinema.org/a/U3G9fBYfc1l6fVm1TQcUtnixD.svg)](https://asciinema.org/a/U3G9fBYfc1l6fVm1TQcUtnixD)
+<a href="https://asciinema.org/a/U3G9fBYfc1l6fVm1TQcUtnixD" target="_blank"><img src="https://asciinema.org/a/U3G9fBYfc1l6fVm1TQcUtnixD.svg" width="400vw"/></a>
 
 ### HTTP way (persistence encryption by default)
 
