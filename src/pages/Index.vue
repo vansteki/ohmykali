@@ -13,6 +13,9 @@
           Make a Kali Linux live USB like a Boss
         </h1>
 
+        <!-- asciinema -->
+        <a href="https://asciinema.org/a/U3G9fBYfc1l6fVm1TQcUtnixD" target="_blank"><img src="https://asciinema.org/a/U3G9fBYfc1l6fVm1TQcUtnixD.svg" /></a>
+
         <p class="text-xl font-medium text-center">
           🔐 USB Persistence + Encrypted Persistence️
           <br>
