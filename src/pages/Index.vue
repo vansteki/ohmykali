@@ -14,7 +14,9 @@
         </h1>
 
         <!-- asciinema -->
-        <a href="https://asciinema.org/a/U3G9fBYfc1l6fVm1TQcUtnixD" target="_blank"><img src="https://asciinema.org/a/U3G9fBYfc1l6fVm1TQcUtnixD.svg" /></a>
+        <p>
+          <a href="https://asciinema.org/a/U3G9fBYfc1l6fVm1TQcUtnixD" target="_blank"><img src="https://asciinema.org/a/U3G9fBYfc1l6fVm1TQcUtnixD.svg" width="500vw"/></a>
+        </p>
 
         <p class="text-xl font-medium text-center">
           🔐 USB Persistence + Encrypted Persistence️
