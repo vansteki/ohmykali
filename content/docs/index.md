@@ -69,7 +69,7 @@ enter your passphrase
 enter your passphrase again
 ```
 
-### 3. Done, reboot
+Waiting for downloading ISO file and disk partition. Be patient, it may take some time.
 
 ## Config options
 
