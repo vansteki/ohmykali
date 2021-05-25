@@ -14,11 +14,13 @@
         </h1>
 
         <!-- asciinema -->
-        <p>
-          <a href="https://asciinema.org/a/U3G9fBYfc1l6fVm1TQcUtnixD" target="_blank">
-              <img height="375px" width="500vw" class='asciinema-img' src="https://asciinema.org/a/U3G9fBYfc1l6fVm1TQcUtnixD.svg" alt=""/>
-          </a>
-        </p>
+        <div class="asciinema">
+<!--          <a href="https://asciinema.org/a/U3G9fBYfc1l6fVm1TQcUtnixD" target="_blank">-->
+<!--            <img height="375px" width="500vw" class='asciinema-img'-->
+<!--                 src="https://asciinema.org/a/U3G9fBYfc1l6fVm1TQcUtnixD.svg" alt=""-->
+<!--            />-->
+<!--          </a>-->
+        </div>
 
         <p class="text-xl font-medium text-center">
           🔐 USB Persistence + Encrypted Persistence️
@@ -155,7 +157,6 @@ export default {
     CoffeeIcon,
     GithubIcon
   },
-
   metaInfo () {
     const title = 'Oh My Kali'
     const description = 'Oh My Kali is an Ansible Playbook that help you create Kali Linux persistence encryption USB.'
@@ -189,6 +190,14 @@ export default {
         },
       ]
     }
+  },
+  mounted () {
+    const scriptTag = document.createElement('script');
+    scriptTag.src = 'https://asciinema.org/a/U3G9fBYfc1l6fVm1TQcUtnixD.js';
+    scriptTag.id = 'asciicast-U3G9fBYfc1l6fVm1TQcUtnixD';
+    scriptTag.setAttribute('charset', 'utf-8');
+    scriptTag.setAttribute('async', '');
+    document.getElementsByClassName('asciinema')[0].appendChild(scriptTag);
   }
 }
 </script>
@@ -196,5 +205,11 @@ export default {
 <style>
 .home-links a {
   margin-right: 1rem;
+}
+.asciicast {
+  width: 40vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 </style>
