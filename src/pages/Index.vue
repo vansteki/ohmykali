@@ -15,7 +15,9 @@
 
         <!-- asciinema -->
         <p>
-          <a href="https://asciinema.org/a/U3G9fBYfc1l6fVm1TQcUtnixD" target="_blank"><img src="https://asciinema.org/a/U3G9fBYfc1l6fVm1TQcUtnixD.svg" width="500vw"/></a>
+          <a href="https://asciinema.org/a/U3G9fBYfc1l6fVm1TQcUtnixD" target="_blank">
+              <img height="375px" width="500vw" class='asciinema-img' src="https://asciinema.org/a/U3G9fBYfc1l6fVm1TQcUtnixD.svg" alt=""/>
+          </a>
         </p>
 
         <p class="text-xl font-medium text-center">
