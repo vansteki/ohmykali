@@ -206,6 +206,10 @@ export default {
 .home-links a {
   margin-right: 1rem;
 }
+.asciinema {
+  width: 712px;
+  height:534px;
+}
 .asciicast {
   width: 40vw;
   display: flex;
