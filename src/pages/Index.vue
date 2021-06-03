@@ -116,8 +116,7 @@
           </p>
 
           <p>BTC: 1MWrddwtiuaBp4kFFTJFZ4nM6FeeALPMR4</p>
-          <p>ETH(ERC20): 0xd37b360952136bf13c7568a4551bc1fc93f116d5</p>
-          <p>ETH(TRC20): TATCbCmh7RLENPfyDdqAjdCHCuJ7R9jger</p>
+          <p>ETH(ERC20): 0xD8292Df6450d606d2F74Ba000e142f6551933E0A</p>
           <p>USDT: 0xd37b360952136bf13c7568a4551bc1fc93f116d5</p>
           <p>DOGE: D5SffyXYx1c7NJVaKu5vy8ppE5YcRBFR9D</p>
 
