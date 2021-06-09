@@ -1,6 +1,6 @@
 <template>
   <h1>
-    💾
+    🌲🏔🏔🌲🐎🐎🌲🌲🌲🌲🏯🌲🌲🦉🌲🌲🥷🎯🎯🎯🛖🛖🌲🌲⛩🌲🌲
   </h1>
   <!--  <svg :width="getWidth" :height="getHeight" x="0.0" y="0.0" viewBox="0 0 48 48">-->
   <!--    <path-->
