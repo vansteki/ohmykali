@@ -80,7 +80,7 @@ isoDir: ./iso
 isoName: kali-linux-2021.1-live-amd64.iso
 
 officialISO: http://cdimage.kali.org/kali-2021.1/kali-linux-2021.1-live-amd64.iso
-officialMirrorISO: http://mirror.anigil.com/kali-images/kali-2021.1/kali-linux-2021.1-live-amd64.iso
+officialMirrorISO: https://cdimage.kali.org/kali-2022.1/kali-linux-2022.1-live-amd64.iso
 userMirrorISO: http://kali.cs.nctu.edu.tw/kali-images/kali-2021.1/kali-linux-2021.1-live-amd64.iso
 
 timeout: 3600
@@ -121,7 +121,7 @@ officialISO: http://cdimage.kali.org/kali-2021.1/kali-linux-2021.1-live-amd64.is
 ```
 ### officialMirrorISO
 ```
-officialMirrorISO: http://mirror.anigil.com/kali-images/kali-2021.1/kali-linux-2021.1-live-amd64.iso
+officialMirrorISO: https://cdimage.kali.org/kali-2022.1/kali-linux-2022.1-live-amd64.iso
 ```
 ### userMirrorISO
 ```
