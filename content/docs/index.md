@@ -5,7 +5,7 @@ sidebar: 'docs'
 
 # Introduction
 
-Prepare a Kali Bootable USB Drive (2021.1 by default), see
+Prepare a Kali Bootable USB Drive (2022.1 by default), see
 [this article](https://www.kali.org/docs/usb/)
 
 ## HTTP way
@@ -77,11 +77,11 @@ All options in `vars.example.yml`:
 
 ```
 isoDir: ./iso
-isoName: kali-linux-2021.1-live-amd64.iso
+isoName: kali-linux-2022.1-live-amd64.iso
 
-officialISO: http://cdimage.kali.org/kali-2021.1/kali-linux-2021.1-live-amd64.iso
+officialISO: https://cdimage.kali.org/kali-2022.1/kali-linux-2022.1-live-amd64.iso
 officialMirrorISO: https://cdimage.kali.org/kali-2022.1/kali-linux-2022.1-live-amd64.iso
-userMirrorISO: http://kali.cs.nctu.edu.tw/kali-images/kali-2021.1/kali-linux-2021.1-live-amd64.iso
+userMirrorISO: http://kali.cs.nctu.edu.tw/kali-images/kali-2022.1/kali-linux-2022.1-live-amd64.iso
 
 timeout: 3600
 ```
@@ -101,7 +101,7 @@ isoDir: ./iso
 ### isoName
 Kali Linux ISO downloaded file name , if you change it, you may need to change files in `scripts/`.
 ```
-isoName: kali-linux-2021.1-live-amd64.iso
+isoName: kali-linux-2022.1-live-amd64.iso
 ```
 
 ### timeout
@@ -113,11 +113,11 @@ timeout: 3600
 
 You can also use mirror site if download progress is too slow.
 
-Note: This script use `kali-2021.1` by default. If your live USB is made with `kali-2021.1`, you should also config these options to the same version. 
+Note: This script use `kali-2022.1` by default. If your live USB is made with `kali-2022.1`, you should also config these options to the same version. 
 
 ### officialISO
 ```
-officialISO: http://cdimage.kali.org/kali-2021.1/kali-linux-2021.1-live-amd64.iso
+officialISO: https://kali.download/base-images/kali-2022.1/kali-linux-2022.1-live-amd64.iso
 ```
 ### officialMirrorISO
 ```
@@ -125,5 +125,5 @@ officialMirrorISO: https://cdimage.kali.org/kali-2022.1/kali-linux-2022.1-live-a
 ```
 ### userMirrorISO
 ```
-userMirrorISO: http://kali.cs.nctu.edu.tw/kali-images/kali-2021.1/kali-linux-2021.1-live-amd64.iso
+userMirrorISO: https://kali.cs.nctu.edu.tw/kali-images/kali-2022.1/kali-linux-2022.1-live-amd64.iso
 ```
