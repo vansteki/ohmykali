@@ -65,7 +65,7 @@
 
     - name: Download Kali image (official mirror)
       get_url:
-        url: "{{ officialMirrorISO | default('http://mirror.anigil.com/kali-images/kali-2021.1/kali-linux-2021.1-live-amd64.iso', true) }}"
+        url: "{{ officialMirrorISO | default('https://cdimage.kali.org/kali-2022.1/kali-linux-2022.1-live-amd64.iso', true) }}"
         dest: "{{ isoDir | default('./iso', true) }}/{{ isoName | default('kali-linux-2021.1-live-amd64.iso', true) }}"
       register: downloadResult
       when: downloadResult is failed
