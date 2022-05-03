@@ -81,11 +81,11 @@ cp vars.example.yml vars.yml
 
 You can also use other mirror sites.
 
-Note: This script use `kali-2021.1` by default. If your live USB is made with `kali-2021.1`, you should also config these options to the same version.
+Note: This script use `kali-2022.1` by default. If your live USB is made with `kali-2022.1`, you should also config these options to the same version.
 
 
 ```
-officialISO: https://cdimage.kali.org/kali-2021.1/kali-linux-2021.1-live-amd64.iso
-officialMirrorISO: https://mirror.anigil.com/kali-images/kali-2021.1/kali-linux-2021.1-live-amd64.iso
-userMirrorISO: https://kali.cs.nctu.edu.tw/kali-images/kali-2021.1/kali-linux-2021.1-live-amd64.iso
+officialISO: https://cdimage.kali.org/kali-2022.1/kali-linux-2022.1-live-amd64.iso
+officialMirrorISO: https://kali.download/base-images/kali-2022.1/kali-linux-2022.1-live-amd64.iso
+userMirrorISO: https://kali.cs.nctu.edu.tw/kali-images/kali-2022.1/kali-linux-2022.1-live-amd64.iso
 ```

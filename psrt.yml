@@ -31,7 +31,7 @@
 
     - name: Check if Kali Image exist
       stat:
-        path: "{{ isoDir | default('./iso', true) }}/{{ isoName | default('kali-linux-2021.1-live-amd64.iso', true) }}"
+        path: "{{ isoDir | default('./iso', true) }}/{{ isoName | default('kali-linux-2022.1-live-amd64.iso', true) }}"
       register: kaliImage
       tags: iso
 
@@ -44,7 +44,7 @@
     - name: Download Kali image (user mirror)
       get_url:
         url: "{{ userMirrorISO }}"
-        dest: "{{ isoDir | default('./iso', true) }}/{{ isoName | default('kali-linux-2021.1-live-amd64.iso', true) }}"
+        dest: "{{ isoDir | default('./iso', true) }}/{{ isoName | default('kali-linux-2022.1-live-amd64.iso', true) }}"
       register: downloadResult
       when: kaliImage.stat.exists is false
       ignore_errors: true
@@ -58,7 +58,7 @@
     - name: Download Kali image (official)
         shell: |
           cd ./iso
-          curl -Lo {{ isoName | default('kali-linux-2021.1-live-amd64.iso', true) }} {{ officialISO | default('http://cdimage.kali.org/kali-2021.1/kali-linux-2021.1-live-amd64.iso', true) }}
+          curl -Lo {{ isoName | default('kali-linux-2022.1-live-amd64.iso', true) }} {{ officialISO | default('http://cdimage.kali.org/kali-2022.1/kali-linux-2022.1-live-amd64.iso', true) }}
         register: downloadResult
         when: downloadResult is failed
         ignore_errors: truetest
@@ -66,7 +66,7 @@
     - name: Download Kali image (official mirror)
       get_url:
         url: "{{ officialMirrorISO | default('https://cdimage.kali.org/kali-2022.1/kali-linux-2022.1-live-amd64.iso', true) }}"
-        dest: "{{ isoDir | default('./iso', true) }}/{{ isoName | default('kali-linux-2021.1-live-amd64.iso', true) }}"
+        dest: "{{ isoDir | default('./iso', true) }}/{{ isoName | default('kali-linux-2022.1-live-amd64.iso', true) }}"
       register: downloadResult
       when: downloadResult is failed
       any_errors_fatal: true

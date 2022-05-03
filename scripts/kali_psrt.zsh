@@ -8,7 +8,7 @@ newDisk=$2
 size=$3
 
 end=$size
-read start _ < <(du -bcm ./iso/kali-linux-2021.1-live-amd64.iso | tail -1); echo $start
+read start _ < <(du -bcm ./iso/kali-linux-2022.1-live-amd64.iso | tail -1); echo $start
 parted -s $disk mkpart primary ${start}MiB $end
 
 mkfs.ext3 -L persistence $newDisk
