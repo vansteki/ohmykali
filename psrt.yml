@@ -56,12 +56,13 @@
       tags: iso
 
     - name: Download Kali image (official)
-        shell: |
-          cd ./iso
-          curl -Lo {{ isoName | default('kali-linux-2022.1-live-amd64.iso', true) }} {{ officialISO | default('http://cdimage.kali.org/kali-2022.1/kali-linux-2022.1-live-amd64.iso', true) }}
-        register: downloadResult
-        when: downloadResult is failed
-        ignore_errors: truetest
+      shell: |
+        cd ./iso
+        curl -Lo {{ isoName | default('kali-linux-2022.1-live-amd64.iso', true) }} {{ officialISO | default('http://cdimage.kali.org/kali-2022.1/kali-linux-2022.1-live-amd64.iso', true) }}
+      register: downloadResult
+      when: downloadResult is failed
+      ignore_errors: true
+      tags: iso
 
     - name: Download Kali image (official mirror)
       get_url:
@@ -92,4 +93,3 @@
     - name: debug
       debug:
         var: res.stdout_lines
-
