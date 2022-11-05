@@ -10,10 +10,6 @@
       prompt: What is your USB device (eg /dev/sda)?
       private: no
 
-    - name: size
-      prompt: What size do you want to part (eg 7GiB)?
-      private: no
-
   tasks:
     - name: check input
       assert:
@@ -22,54 +18,6 @@
         fail_msg: "some values are not truthy"
         success_msg: "all values are truthy"
       any_errors_fatal: true
-
-#    - name: Check if Kali Image exist
-#      stat:
-#        path: "{{ isoDir | default('./iso', true) }}/{{ isoName | default('kali-linux-2022.1-live-amd64.iso', true) }}"
-#      register: kaliImage
-#      tags: iso
-#
-#    - name: debug
-#      debug:
-#        msg: "The Kali image exists"
-#      when: kaliImage.stat.exists is true
-#      tags: iso
-
-#    - name: Download Kali image (user mirror)
-#      get_url:
-#        url: "{{ userMirrorISO }}"
-#        dest: "{{ isoDir | default('./iso', true) }}/{{ isoName | default('kali-linux-2022.1-live-amd64.iso', true) }}"
-#      register: downloadResult
-#      when: kaliImage.stat.exists is false
-#      ignore_errors: true
-#      tags: iso
-
-#    - name: debug download downloadResult
-#      debug:
-#        var: downloadResult
-#      tags: iso
-
-#    - name: Download Kali image (official)
-#      shell: |
-#        cd ./iso
-#        curl -Lo {{ isoName | default('kali-linux-2022.1-live-amd64.iso', true) }} {{ officialISO | default('http://cdimage.kali.org/kali-2022.1/kali-linux-2022.1-live-amd64.iso', true) }}
-#      register: downloadResult
-#      when: downloadResult is failed
-#      ignore_errors: true
-#      tags: iso
-
-#    - name: Download Kali image (official mirror)
-#      get_url:
-#        url: "{{ officialMirrorISO | default('https://cdimage.kali.org/kali-2022.3/kali-linux-2022.3-live-amd64.iso', true) }}"
-#        dest: "{{ isoDir | default('./iso', true) }}/{{ isoName | default('kali-linux-2022.1-live-amd64.iso', true) }}"
-#      register: downloadResult
-#      when: downloadResult is failed
-#      any_errors_fatal: true
-#      tags: iso
-
-#    - name: debug message
-#      debug:
-#        var: out
 
     - name: Adding Persistence to a Kali Linux "Live" USB Drive
       shell: |
