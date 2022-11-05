@@ -1,20 +1,16 @@
 #!/bin/zsh
 # https://www.kali.org/docs/usb/usb-persistence/
-# usage: ./kali_psrt.zsh /dev/sda /dev/sda3 27GiB
+# usage: ./kali_psrt.zsh /dev/sdb
 
 set -x
-disk=$1
-newDisk=$2
-size=$3
+usb=$1
+#usb=/dev/sdb
 
-end=$size
-read start _ < <(du -bcm ./iso/kali-linux-2022.1-live-amd64.iso | tail -1); echo $start
-parted -s $disk mkpart primary ${start}MiB $end
+sudo fdisk $usb <<< $(printf "n\np\n\n\n\nw")
 
-mkfs.ext3 -L persistence $newDisk
-e2label $newDisk persistence
+sudo mkfs.ext3 -L persistence ${usb}3
 
-mkdir -p /mnt/my_usb
-mount $newDisk /mnt/my_usb
-echo "/ union" > /mnt/my_usb/persistence.conf
-umount $newDisk
+sudo mkdir -p /mnt/my_usb
+sudo mount ${usb}3 /mnt/my_usb
+echo "/ union" | sudo tee /mnt/my_usb/persistence.conf
+sudo umount ${usb}3
